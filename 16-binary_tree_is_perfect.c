@@ -27,7 +27,7 @@ int isPerfectRec(const binary_tree_t *tree, size_t dpth, size_t level)
 	if (tree == NULL)
 		return (1);
 	if (tree->left == NULL && tree->right == NULL)
-		return (level == dpth);
+		return (level == dpth ? 0 : 1);
 	if (tree->left == NULL || tree->right == NULL)
 		return (0);
 
