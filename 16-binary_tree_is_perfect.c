@@ -7,6 +7,7 @@
 int depth_finder(const binary_tree_t *node)
 {
 	int depth = 0;
+
 	while (node != NULL)
 	{
 		depth++;
@@ -45,5 +46,5 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 	d = depth_finder(tree);
-	return isPerfectRec(tree, d, 0);
+	return (isPerfectRec(tree, d, 0));
 }

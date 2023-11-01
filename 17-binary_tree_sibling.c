@@ -2,7 +2,7 @@
 #include "binary_trees.h"
 /**
  * binary_tree_sibling - return the siblig node of node
- * @node - node to compare
+ * @node: node to compare
  * Return: Pointer to sibling node; else NULL
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
@@ -16,6 +16,6 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 		return (node->parent->right);
 	else if (node->parent->right == node)
 		return (node->parent->left);
-	
+
 	return (NULL);
 }
